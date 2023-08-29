@@ -16,7 +16,7 @@ function showMessage() {
 var showMessage2 = function () {
     console.log('Expression function')
 }
-//truyền dưới dạng callback
+//truyền dưới dạng callback(nên đặt tên để dễ dàng nhận biết chức năng của hàm)
 setTimeout(function autoLogin() {
 
 });
