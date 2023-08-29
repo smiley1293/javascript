@@ -16,12 +16,23 @@ console.log(result)
  * 3. Định nghĩa hàm trong hàm?
  */
 
-function showMessage() {
-    console.log('Message 1');
-}
 
-function showMessage(){
-    console.log('Message 2');
-}
 // Khi có hàm cùng tên thì chỉ gọi đến hàm sau cùng
+
+
+function showMessage() {
+    var fullName = 'Trong Viet';
+    
+    console.log(fullName)
+}
+// Một biến đc khai báo trong hàm chỉ có phạm vi sử dụng trong hàm
+// Và hàm đc tạo trong hàm cũng có chức năng tương tự như biến
 showMessage();
+
+function other() {
+    function showMessage2() {
+        console.log('Message 2');
+    }
+    showMessage2();
+}
+other();
