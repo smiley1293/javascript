@@ -51,3 +51,8 @@ var course = {
 
 var result = course.price > 0 ? `${course.price} coins` : 'Free'
 console.log(result)
+
+var a = 1;
+var b = 2;
+
+var c = a > 0 ? a : b;

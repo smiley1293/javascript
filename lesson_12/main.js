@@ -42,7 +42,7 @@ function User(firstName, lastName, avatar) {
    this.getName = function (){
       return `${this.firstName} ${this.lastName}`
    }
-}
+} 
 // Sau này đối tượng đc khởi tạo từ bản thiết kế này, thì sẽ có firstName bằng với tham số firstName đc truyền vào khi khởi tạo đối tượng
 
 var author = new User('Mai', 'Việt', 'avatar');
