@@ -193,18 +193,14 @@ var watchList = [
       "Type": "movie",
    }
 ];
-function calculateRating(watchList) {
-   var filmList = watchList.filter(function (film) {
+function calculateRating(array) {
+   var filmList = array.filter(function (film) {
       return film.Director === 'Christopher Nolan'
    })
-   console.log(filmList);
    var sumPoint = filmList.reduce(function(point, filmPoint){
-
       return point + parseFloat(filmPoint.imdbRating);
    },0)
-   console.log(sumPoint);
-   var dtb = sumPoint/filmList.length
-   console.log(dtb)
+   return dtb = sumPoint/filmList.length
 }
 
 
