@@ -36,4 +36,5 @@ console.log(document.anchors)
 // Trả về tất cả thẻ hình ảnh
 document.images;
 //* 2. Attribute:
+
 //* 3. Text
