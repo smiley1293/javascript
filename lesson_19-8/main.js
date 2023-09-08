@@ -16,3 +16,4 @@ console.log(boxElement.classList.remove('red'))
 setInterval(()=>{
    boxElement.classList.toggle('red')
 },1000)
+
