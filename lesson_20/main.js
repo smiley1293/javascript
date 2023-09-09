@@ -50,3 +50,90 @@ setTimeout(function() {
 
 console.log('Dòng này sẽ in ra trước') // Đây là tác vụ đồng bộ (sync)
 
+// Callback hell
+// Pyramid of doom
+
+
+// 1. New promise
+// 2. Executor
+// promise nhận vào constructor 1 function
+
+// 1. Pending
+// 2. Fullfilled
+// 3. Rejected
+var promise = new Promise(
+   // Executor
+   function(resolve, reject){ //2 tham số là thành công và thất bại
+      //Logic
+      // Thành công: resolve()
+      // Thất bại: reject()
+      // resolve([
+      //    {
+      //       id:1,
+      //       name: 'JavaScript'
+      //    }
+      // ]);
+      resolve('Có lỗi')
+   }
+) 
+
+// promise
+//       .then(function(courses){
+//          console.log(courses)
+//       })
+//       .catch(function(error){
+//          console.log(error)          
+//       })
+//       .finally(function(){
+//          console.log('Xong')
+//       })
+
+promise
+      .then(function(){
+         return new Promise(function(resolve){
+            setTimeout(function(){
+               resolve([1,2,3])
+            }, 3000) //chuỗi này sẽ đợi tuần tự, chờ thằng này trả về promise thì thằng sau mới then tiếp, bàn chất nó vẫn như thằng new Promise như trên
+         }); 
+      })//nếu ko return thì thằng đằng sau nó sẽ nhận đc undefined 
+      .then(function(data){
+         console.log(data);
+         return 2;          
+      })
+      .then(function(data){
+         console.log(data);
+         return 3;          
+      })
+      .then(function(data){
+         console.log(data)
+      })
+      .catch(function(error){
+         console.log(error);         
+      })
+      .finally(function(data){
+         console.log('Xong')
+      });
+
+function sleep(ms){
+   return new Promise(function(resolve){
+      setTimeout(resolve,ms);
+   })
+}
+
+sleep(4000)
+      .then(function(){
+         console.log(1)
+         return sleep(4000)
+      })
+      .then(function(){
+         console.log(2)
+         return sleep(4000)
+      })
+      .then(function(){
+         console.log(3)
+         return sleep(4000)
+      })
+      .then(function(){
+         console.log(4)
+         return sleep(4000)
+      })
