@@ -1,0 +1,14 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "name": "Kiến thức cơ bản cho người mới",
+      "description": "Kiến thức dễ hiểu nhất dành cho những người mới tiếp cận"
+    },
+    {
+      "name": "Xây dựng web với NodeJS và ExpressJS 1",
+      "description": "Kiến thức nền tảng về NodeJS dành cho xây dựng trang web",
+      "id": 2
+    }
+  ]
+}
