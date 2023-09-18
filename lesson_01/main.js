@@ -30,7 +30,7 @@ var age = 26; //khai báo tuổi
  */
 
 var fullName = 'Mai Trong Viet';
-console.log(fullName) 
+console.log(fullName)
 // confirm('Xác nhận bạn đủ tuổi');
 // *Hàm prompt cho phép nhập input
 // prompt('Xác nhận bạn đủ tuổi');
@@ -46,67 +46,67 @@ console.log(fullName)
 
 /**
  ** Giới thiệu về toán tử
-    1. Toán tử số học - Arithmetic
-    2. Toán tử gán - Assignment
-    3. Toán tử so sánh - Comparison
-    4. Toán tử Logic - Logical
+   1. Toán tử số học - Arithmetic
+   2. Toán tử gán - Assignment
+   3. Toán tử so sánh - Comparison
+   4. Toán tử Logic - Logical
  */
 
-    // var fullName = "Mai Trong Viet" //toán tử gán
-    // var a = 1;
-    // var b = 2;
+// var fullName = "Mai Trong Viet" //toán tử gán
+// var a = 1;
+// var b = 2;
 
-    // if (a == b){
-    //     console.log('A lớn hơn B')
-    // }else{
-    //     console.log('A bé hơn B nha')
-    // }
+// if (a == b){
+//     console.log('A lớn hơn B')
+// }else{
+//     console.log('A bé hơn B nha')
+// }
 
-    /**
-     * *Toán tử số học
-     * +        --> Cộng
-     * -        --> Trừ
-     * *        --> Nhân
-     * **       --> Lũy thừa
-     * /        --> Chia
-     * %        --> Chia lấy số dư
-     * ++       --> Tăng 1 giá trị số
-     * --       --> Giảm 1 giá trị số
-     */
+/**
+ * *Toán tử số học
+ * +        --> Cộng
+ * -        --> Trừ
+ * *        --> Nhân
+ * **       --> Lũy thừa
+ * /        --> Chia
+ * %        --> Chia lấy số dư
+ * ++       --> Tăng 1 giá trị số
+ * --       --> Giảm 1 giá trị số
+ */
 
-    // var a = 8;
-    // var b = 2;
+// var a = 8;
+// var b = 2;
 
-    // var c =  a%b;
-    // console.log(c)
+// var c =  a%b;
+// console.log(c)
 
-    // ?Toán tử ++ --
-    // Prefix & Postfix
+// ?Toán tử ++ --
+// Prefix & Postfix
 
-    var a = 6;
+var a = 6;
 
 // Việc 1: +1 cho a, a = a+1 ==> a =7
 // Việc 2: trả về a sau khi đc cộng 1, --a thì ngược lại
-    // var output = ++a;
+// var output = ++a;
 
-    // console.log(output) //7
+// console.log(output) //7
 
-    // Việc 1: 'a copy', 'a copy' = 6
-    // Việc 2: + 1 của a, a = a + 1 => a = 7
-    // Việc 3: Trả về 'a copy'
-    // var output = a++;
+// Việc 1: 'a copy', 'a copy' = 6
+// Việc 2: + 1 của a, a = a + 1 => a = 7
+// Việc 3: Trả về 'a copy'
+// var output = a++;
 
-    // console.log(output);
-    // ?muốn nhìn đc giá trị thật của a
-    // console.log(a)
+// console.log(output);
+// ?muốn nhìn đc giá trị thật của a
+// console.log(a)
 
-    var number = 6;
+var number = 6;
 
-    // var output = number++ + --number;
-    // 6 + 6 = 12
-    var output = ++number *2 - number--*2;
-    // 7 * 2 - 
-    console.log(output)
+// var output = number++ + --number;
+// 6 + 6 = 12
+var output = ++number * 2 - number-- * 2;
+// 7 * 2 - 
+console.log(output)
 
 
 

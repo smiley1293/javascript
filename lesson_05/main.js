@@ -46,7 +46,7 @@ function writeLog(message, other) {
     console.log(other)
 }
 // Biến message nằm trong hàm, nên nếu gọi ra ngoài sẽ bị báo lỗi
- //gọi và truyền giá trị vào sẽ gọi là đối số
+// gọi và truyền giá trị vào sẽ gọi là đối số
 writeLog('Test message lần 2','Test lần 3')
 
 function otherLog(){

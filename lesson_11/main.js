@@ -15,9 +15,11 @@ var languages = [
    'PHP',
    'Ruby',
 ]
+const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+console.log(array[9]);
 
 
-console.log(languages[0])
+console.log(languages[-1])
 console.log(languages.length)
 console.log(languages2)
 console.log(typeof languages)
@@ -60,7 +62,7 @@ console.log(languages)
 
 // ?Splicing: xóa hoặc chèn cả phần tử vào mảng
 // Xóa: tham số thứ nhất: đặt con trỏ vào vị trí nào | tham số thứ 2: số phần tử xóa từ tham số thứ nhất
-console.log(languages.splice(1, 1))
+console.log(languages.splice(-2, 1))
 console.log(languages)
 
 // Chèn: cho tham số thứ 2 là 0, để có thể thêm đc tahm số thứ 3 ngày trước con trỏ
@@ -76,7 +78,7 @@ var languages2 = [
 console.log(languages.concat(languages2))
 
 //?Slicing: cắt element, 2 tham số thì tham số đầu là vị trí bắt đầu và tham số thứ 2 là vị trí kết thúc
-console.log(languages.slice(1, 2))
+console.log(languages.slice(-3,-1))
 console.log(languages)
 
    // Viết hàm tại đây

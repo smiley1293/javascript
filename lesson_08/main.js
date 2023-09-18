@@ -27,3 +27,13 @@ var lastName = 'Trong'
 
 // Template string ES6
 console.log(`Tôi là: ${firstName} ${lastName}`)
+var a = 'Tụt đáng yêu';
+
+if(typeof a === 'string'){
+      console.log("Đúng nó là chuỗi đó");
+}else{
+      console.log("Không đúng nó là chuỗi đó");
+}
+(typeof a === 'string') ? console.log('Chuỗi đó'):console.log('Gà')
+
+
