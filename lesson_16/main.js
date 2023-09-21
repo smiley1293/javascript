@@ -93,4 +93,4 @@ console.log(newCourses)
 
 
 // Expected results
-console.log(calculateRating(watchList)); // Output: 8.675
+// console.log(calculateRating(watchList)); // Output: 8.675
